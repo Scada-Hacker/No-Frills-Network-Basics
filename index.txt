@@ -20,15 +20,32 @@ Index :
 1. I Want to be a hacker like MR Robot. Teach ME !
 2. Fundementals
 3. Networking
-IP Address
+
+3.1 IP Address
 Subnets
 Cidr
-Protocols
-Private / Public
+
+3.2 Protocols
+DNS
+DHCP
+ARP
+SMB
+SMTP
+HTTP
+
+3.3 Private / Public
 
 4. Firewalls
 5. Network Analysis
 6. Wireless Protocols
 7. An introduction to ICS and why you should NEVER attempt to hack it 
-
+Shodan
+Perdue Model
+PLC's
+SCADA
+MODBUS
+HMI - Human Machine Interface
+8. CAN Bus
+9. Radio Frequencies
+10 HMI - USB on steroids
 
