@@ -20,3 +20,15 @@ Index :
 1. I Want to be a hacker like MR Robot. Teach ME !
 2. Fundementals
 3. Networking
+IP Address
+Subnets
+Cidr
+Protocols
+Private / Public
+
+4. Firewalls
+5. Network Analysis
+6. Wireless Protocols
+7. An introduction to ICS and why you should NEVER attempt to hack it 
+
+
