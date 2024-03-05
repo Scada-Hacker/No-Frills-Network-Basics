@@ -1,3 +1,5 @@
+! This is the work in progress salty version !
+
 No Frills, does what it says on the tin, Network Basics.
 
 Lets get some things out the way
@@ -14,7 +16,7 @@ There are 2 things I'm very aware of :
 
 I cant do much about number 1. If you fall into this catergory, I doubt this is for you. I can, for those willing to learn and do research without constantly asking "next question please" do something about the second.
 
-As i said - no frills.
+As I said - no frills.
 
 Index :
 1. I Want to be a hacker like MR Robot. Teach ME !
@@ -60,5 +62,6 @@ Now you have 2 options
 
 Fundementals
 
+The next section covers the bits you should learn before progressing any further. This will give you a strong foundation and understanding before sticking on a guyfawkes mask and pretending your some kind of anoynmous super hacker. It's not over complicated, and you will thank yourself for putting in a little work instead of wasting your time playing fortnite, watching xxxx porn websites and trying to hack into someones private instagram pictures (Im looking at YOU !)
 
 
