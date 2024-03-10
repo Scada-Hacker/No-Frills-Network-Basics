@@ -60,11 +60,11 @@ Now you have 2 options
 1. Go away
 2. Jump to the next section and start learning the fundementals
 
-Fundementals
+3. Fundementals
 
 The next section covers the bits you should learn before progressing any further. This will give you a strong foundation and understanding before sticking on a guyfawkes mask and pretending your some kind of anoynmous super hacker. It's not over complicated, and you will thank yourself for putting in a little work instead of wasting your time playing fortnite, watching xxxx porn websites and trying to hack into someones private instagram pictures (Im looking at YOU !)
 
-
+Network fundamentals encompass the foundational principles and components essential for the functioning of computer networks. At the core is an understanding of the OSI (Open Systems Interconnection) model, which delineates the seven layers of communication protocols. Proficiency in networking requires a grasp of networking devices such as routers, switches, hubs, and modems, as well as an ability to configure and manage them. A solid comprehension of IP addressing, subnetting, and the different types of IP protocols is crucial for effective communication within a network. Protocols like TCP/IP play a pivotal role in data transmission, highlighting the significance of reliable and efficient communication. Security is another critical aspect, with an emphasis on concepts like firewalls, encryption, and secure authentication mechanisms. Additionally, troubleshooting skills are paramount for identifying and resolving issues that may arise in a network.
 
 
 3.1
@@ -104,7 +104,7 @@ Number of Hosts: The number of hosts required in each subnet influences the subn
 Geographical Location: Consider the physical layout of the network and the need for subnets in different locations.
 
 Binary Translation in Subnetting: Unveiling the Binary Language of Networks
-**1. ** Binary Representation of IP Addresses:
+1. Binary Representation of IP Addresses:
 
 At its core, all networking operations, including subnetting, rely on binary representation. Each octet (8 bits) of an IP address is converted into binary form. For example, the IP address 192.168.1.1 translates to 11000000.10101000.00000001.00000001 in binary.
 
