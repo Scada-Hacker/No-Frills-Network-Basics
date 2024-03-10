@@ -69,13 +69,14 @@ The next section covers the bits you should learn before progressing any further
 
 3.1
 Subnets
-Certainly! Here's a section about subnets for your guide to network fundamentals:
+
 Understanding Subnets in Networking
 
 A subnet, short for "subnetwork," is a division of an IP network that enables efficient organization and management of IP addresses. Subnetting plays a crucial role in optimizing network performance, security, and resource allocation.
-**1. ** IP Addressing Basics:
 
-    In networking, devices are identified by unique IP addresses. IP addresses consist of two main components: the network portion and the host portion. Subnetting focuses on dividing the IP address space into smaller, more manageable segments.
+1. IP Addressing Basics:
+
+In networking, devices are identified by unique IP addresses. IP addresses consist of two main components: the network portion and the host portion. Subnetting focuses on dividing the IP address space into smaller, more manageable segments.
 
 2. Why Subnet?
 
