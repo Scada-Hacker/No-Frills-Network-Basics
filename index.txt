@@ -128,7 +128,6 @@ The subnet mask is logically ANDed with the IP address in binary. This operation
 
 CIDR notation, often expressed as /n, indicates the number of bits in the network portion of the subnet mask. For example, /24 means the first 24 bits are the network, and the remaining bits are for hosts. In binary, this translates to:
 
-
     Network:       11000000.10101000.00000001.00000000
     CIDR (/24):    11111111.11111111.11111111.00000000
 
@@ -150,3 +149,35 @@ When designing subnets, binary logic guides decisions on the number of subnets a
 
 As network administrators plan and implement subnets, understanding the binary translation is essential. It aids in addressing complexities, troubleshooting, and efficiently managing IP resources.
 
+3.3:
+
+3.3: 
+
+Public IP addresses 
+
+Crucial for global internet connectivity, are organized within specific ranges. 
+These ranges ensure efficient allocation and management of addresses.  
+
+1.0.0.0 to 9.255.255.255, 
+11.0.0.0 to 100.63.255.255, 
+100.128.0.0 to 126.255.255.255, 
+128.0.0.0 to 169.253.255.255, 
+169.255.0.0 to 172.15.255.255, 
+172.32.0.0 to 191.255.255.255, 
+192.0.1.0/24, 
+192.0.3.0 to 192.88.98.255, 
+192.88.100.0 to 192.167.255.255, 
+192.169.0.0 to 198.17.255.255, 
+198.20.0.0 to 198.51.99.255, 
+198.51.101.0 to 203.0.112.255, 
+203.0.114.0 to 223.255.255.255. 
+
+These ranges help in preventing conflicts, ensuring that each device on the internet is uniquely identified by its public IP address. Whether it's for a website, server, or any globally accessible device, adhering to these established ranges ensures the smooth flow of information across the interconnected web.
+
+Private IP addresses fall within the ranges of 
+
+10.0.0.0 to 10.255.255.255 (Class A),
+172.16.0.0 to 172.31.255.255 (Class B), and 
+192.168.0.0 to 192.168.255.255 (Class C). 
+
+These private address ranges are reserved for internal networks and are not routable over the internet.
