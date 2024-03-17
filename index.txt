@@ -28,9 +28,169 @@ Index :
 Subnets
 Cidr
 
+3.2 Addressing
+
+Private / Public IP 
+
+3.3 Protocols
+DNS
+DHCP
+ARP
+SMB
+SMTP
+HTTP
+
+4. Firewalls
+5. Network Analysis
+6. Wireless Protocols
+7. An introduction to ICS and why you should NEVER attempt to hack it 
+Shodan
+Perdue Model
+PLC's
+SCADA
+MODBUS
+HMI - Human Machine Interface
+8. CAN Bus
+9. Radio Frequencies
+10 HMI - USB on steroids
+
+------------------------------------------------
+
+1. I Want to be a hacker like MR Robot. Teach ME !
+
+Shut up. Take a moment, repeat out loud and Listen to how ridiculous it sounds asking such questions. BTW Mr Robot, whilst rather good in its own right was nothing to do with hacking and everything to do with mental illness.
+
+Now you have 2 options
+
+1. Go away
+2. Jump to the next section and start learning the fundementals
+
+2. Fundementals
+The next sections cover the bits you should learn before progressing any further. This will give you a strong foundation and understanding before sticking on a guyfawkes mask and pretending your some kind of anoynmous super hacker. It's not over complicated, and you will thank yourself for putting in a little work instead of wasting your time playing fortnite, watching xxxx porn websites and trying to hack into someones private instagram pictures (Im looking at YOU !)
+
+3. Networks
+
+Network fundamentals encompass the foundational principles and components essential for the functioning of computer networks. At the core is an understanding of the OSI (Open Systems Interconnection) model, which delineates the seven layers of communication protocols. Proficiency in networking requires a grasp of networking devices such as routers, switches, hubs, and modems, as well as an ability to configure and manage them. A solid comprehension of IP addressing, subnetting, and the different types of IP protocols is crucial for effective communication within a network. Protocols like TCP/IP play a pivotal role in data transmission, highlighting the significance of reliable and efficient communication. Security is another critical aspect, with an emphasis on concepts like firewalls, encryption, and secure authentication mechanisms. Additionally, troubleshooting skills are paramount for identifying and resolving issues that may arise in a network.
+
+
+3.1
+
+1. IP Addressing Basics:
+
+In networking, devices are identified by unique IP addresses. IP addresses consist of two main components: the network portion and the host portion. Subnetting focuses on dividing the IP address space into smaller, more manageable segments.
+
+----------
+
+Subnets
+
+Understanding Subnets in Networking
+A subnet, short for "subnetwork," is a division of an IP network that enables efficient organization and management of IP addresses. Subnetting plays a crucial role in optimizing network performance, security, and resource allocation.
+
+2. Why Subnet?
+
+Efficient Resource Allocation: Subnetting allows network administrators to allocate IP addresses more efficiently by creating smaller, logical subdivisions. This helps prevent IP address exhaustion and makes it easier to manage and troubleshoot network issues.
+Improved Performance: By breaking a large network into smaller subnets, broadcast traffic is contained within each subnet. This minimizes network congestion and enhances overall performance.
+
+3. Subnet Mask:
+
+A subnet is defined by a subnet mask, which is a 32-bit number that divides the IP address into network and host portions. The subnet mask uses a combination of binary 1s (representing the network portion) and 0s (representing the host portion).
+Example: In the IP address 192.168.1.1 with a subnet mask of 255.255.255.0, the first 24 bits are dedicated to the network, and the last 8 bits are for hosts.
+
+4. Subnetting Notation:
+
+Subnets are often represented using CIDR (Classless Inter-Domain Routing) notation. For instance, 192.168.1.0/24 indicates a subnet with a 24-bit network portion.
+The CIDR notation helps express the size of the subnet and facilitates efficient addressing.
+
+5. Subnetting Benefits:
+
+Security: Subnets enhance security by isolating sections of a network. Access control lists (ACLs) can be applied to regulate traffic between subnets, minimizing unauthorized access and potential security threats.
+Scalability: Subnets provide scalability by allowing networks to grow in a structured manner. New subnets can be added as needed without impacting the entire network.
+
+6. Subnet Design Considerations:
+
+Number of Hosts: The number of hosts required in each subnet influences the subnet mask and design.
+Geographical Location: Consider the physical layout of the network and the need for subnets in different locations.
+
+Binary Translation in Subnetting: Unveiling the Binary Language of Networks
+1. Binary Representation of IP Addresses:
+
+At its core, all networking operations, including subnetting, rely on binary representation. Each octet (8 bits) of an IP address is converted into binary form. For example, the IP address 192.168.1.1 translates to 11000000.10101000.00000001.00000001 in binary.
+
+2. Subnet Mask in Binary:
+
+The subnet mask is a binary pattern that separates the network and host portions of an IP address. In binary, it consists of a series of consecutive 1s followed by 0s. For instance, the subnet mask 255.255.255.0 translates to 11111111.11111111.11111111.00000000 in binary.
+
+3. Applying the Subnet Mask:
+
+The subnet mask is logically ANDed with the IP address in binary. This operation preserves the network portion while zeroing out the host bits. In our example:
+
+    IP Address:   11000000.10101000.00000001.00000001
+    Subnet Mask:   11111111.11111111.11111111.00000000
+    Result:        11000000.10101000.00000001.00000000
+
+    The result is the network address of the subnet.
+
+4. CIDR Notation in Binary:
+
+CIDR notation, often expressed as /n, indicates the number of bits in the network portion of the subnet mask. For example, /24 means the first 24 bits are the network, and the remaining bits are for hosts. In binary, this translates to:
+
+    Network:       11000000.10101000.00000001.00000000
+    CIDR (/24):    11111111.11111111.11111111.00000000
+
+    The CIDR notation aligns with the subnet mask in binary representation.
+
+5. Binary Subnetting Examples:
+
+Consider a subnet with CIDR notation /26:
+
+    CIDR (/26):    11111111.11111111.11111111.11000000
+
+    Applying this subnet mask to an IP address yields a subnet with 64 possible hosts.
+
+6. Binary Logic for Subnetting Decisions:
+
+When designing subnets, binary logic guides decisions on the number of subnets and hosts per subnet. It ensures efficient utilization of IP address space and accommodates the desired network structure.
+
+7. Practical Application:
+
+As network administrators plan and implement subnets, understanding the binary translation is essential. It aids in addressing complexities, troubleshooting, and efficiently managing IP resources.
+
+Public IP addresses 
+
+Crucial for global internet connectivity, are organized within specific ranges. 
+These ranges ensure efficient allocation and management of addresses.  
+
+1.0.0.0 to 9.255.255.255, 
+11.0.0.0 to 100.63.255.255, 
+100.128.0.0 to 126.255.255.255, 
+
+
+128.0.0.0 to 169.253.255.255, 
+169.255.0.0 to 172.15.255.255, 
+172.32.0.0 to 191.255.255.255, 
+192.0.1.0/24, 
+192.0.3.0 to 192.88.98.255, 
+192.88.100.0 to 192.167.255.255, 
+192.169.0.0 to 198.17.255.255, 
+198.20.0.0 to 198.51.99.255, 
+198.51.101.0 to 203.0.112.255, 
+203.0.114.0 to 223.255.255.255. 
+
+These ranges help in preventing conflicts, ensuring that each device on the internet is uniquely identified by its public IP address. Whether it's for a website, server, or any globally accessible device, adhering to these established ranges ensures the smooth flow of information across the interconnected web.
+
+Private IP addresses fall within the ranges of 
+
+10.0.0.0 to 10.255.255.255 (Class A),
+172.16.0.0 to 172.31.255.255 (Class B), and 
+192.168.0.0 to 192.168.255.255 (Class C). 
+
+These private address ranges are reserved for internal networks and are not routable over the internet.
+
+
+
 3.2 Protocols
 
-DNS
+3.2.1 DNS
 
 Understanding How DNS Works: A Comprehensive Tutorial
 
@@ -90,155 +250,4 @@ DNS supports various types of resource records (RRs) that store different types 
 
 DNSSEC is a suite of security extensions designed to add cryptographic integrity and authentication to DNS data. It aims to prevent DNS spoofing and man-in-the-middle attacks by validating DNS responses using digital signatures.
 
-Conclusion
-
 DNS plays a critical role in facilitating internet communication by translating human-readable domain names into machine-readable IP addresses. Understanding how DNS works is essential for network administrators, web developers, and anyone interested in internet infrastructure. By following the steps outlined in this tutorial, you can gain a comprehensive understanding of the DNS resolution process and its underlying mechanisms.
-
-DHCP
-ARP
-SMB
-SMTP
-HTTP
-
-3.3 Private / Public IP Addressing
-
-4. Firewalls
-5. Network Analysis
-6. Wireless Protocols
-7. An introduction to ICS and why you should NEVER attempt to hack it 
-Shodan
-Perdue Model
-PLC's
-SCADA
-MODBUS
-HMI - Human Machine Interface
-8. CAN Bus
-9. Radio Frequencies
-10 HMI - USB on steroids
-
-I Want to be a hacker like MR Robot. Teach ME !
-
-Shut up. Take a moment, repeat out loud and Listen to how ridiculous it sounds asking such questions. BTW Mr Robot, whilst rather good in its own right was nothing to do with hacking and everything to do with mental illness.
-
-Now you have 2 options
-
-1. Go away
-2. Jump to the next section and start learning the fundementals
-
-3. Fundementals
-
-The next section covers the bits you should learn before progressing any further. This will give you a strong foundation and understanding before sticking on a guyfawkes mask and pretending your some kind of anoynmous super hacker. It's not over complicated, and you will thank yourself for putting in a little work instead of wasting your time playing fortnite, watching xxxx porn websites and trying to hack into someones private instagram pictures (Im looking at YOU !)
-
-Network fundamentals encompass the foundational principles and components essential for the functioning of computer networks. At the core is an understanding of the OSI (Open Systems Interconnection) model, which delineates the seven layers of communication protocols. Proficiency in networking requires a grasp of networking devices such as routers, switches, hubs, and modems, as well as an ability to configure and manage them. A solid comprehension of IP addressing, subnetting, and the different types of IP protocols is crucial for effective communication within a network. Protocols like TCP/IP play a pivotal role in data transmission, highlighting the significance of reliable and efficient communication. Security is another critical aspect, with an emphasis on concepts like firewalls, encryption, and secure authentication mechanisms. Additionally, troubleshooting skills are paramount for identifying and resolving issues that may arise in a network.
-
-
-3.1
-Subnets
-
-Understanding Subnets in Networking
-
-A subnet, short for "subnetwork," is a division of an IP network that enables efficient organization and management of IP addresses. Subnetting plays a crucial role in optimizing network performance, security, and resource allocation.
-
-1. IP Addressing Basics:
-
-In networking, devices are identified by unique IP addresses. IP addresses consist of two main components: the network portion and the host portion. Subnetting focuses on dividing the IP address space into smaller, more manageable segments.
-
-2. Why Subnet?
-
-Efficient Resource Allocation: Subnetting allows network administrators to allocate IP addresses more efficiently by creating smaller, logical subdivisions. This helps prevent IP address exhaustion and makes it easier to manage and troubleshoot network issues.
-Improved Performance: By breaking a large network into smaller subnets, broadcast traffic is contained within each subnet. This minimizes network congestion and enhances overall performance.
-
-3. Subnet Mask:
-
-A subnet is defined by a subnet mask, which is a 32-bit number that divides the IP address into network and host portions. The subnet mask uses a combination of binary 1s (representing the network portion) and 0s (representing the host portion).
-Example: In the IP address 192.168.1.1 with a subnet mask of 255.255.255.0, the first 24 bits are dedicated to the network, and the last 8 bits are for hosts.
-
-4. Subnetting Notation:
-
-Subnets are often represented using CIDR (Classless Inter-Domain Routing) notation. For instance, 192.168.1.0/24 indicates a subnet with a 24-bit network portion.
-The CIDR notation helps express the size of the subnet and facilitates efficient addressing.
-
-5. Subnetting Benefits:
-
-Security: Subnets enhance security by isolating sections of a network. Access control lists (ACLs) can be applied to regulate traffic between subnets, minimizing unauthorized access and potential security threats.
-Scalability: Subnets provide scalability by allowing networks to grow in a structured manner. New subnets can be added as needed without impacting the entire network.
-
-6. Subnet Design Considerations:
-
-Number of Hosts: The number of hosts required in each subnet influences the subnet mask and design.
-Geographical Location: Consider the physical layout of the network and the need for subnets in different locations.
-
-Binary Translation in Subnetting: Unveiling the Binary Language of Networks
-1. Binary Representation of IP Addresses:
-
-At its core, all networking operations, including subnetting, rely on binary representation. Each octet (8 bits) of an IP address is converted into binary form. For example, the IP address 192.168.1.1 translates to 11000000.10101000.00000001.00000001 in binary.
-
-2. Subnet Mask in Binary:
-
-The subnet mask is a binary pattern that separates the network and host portions of an IP address. In binary, it consists of a series of consecutive 1s followed by 0s. For instance, the subnet mask 255.255.255.0 translates to 11111111.11111111.11111111.00000000 in binary.
-
-3. Applying the Subnet Mask:
-
-The subnet mask is logically ANDed with the IP address in binary. This operation preserves the network portion while zeroing out the host bits. In our example:
-
-  
-
-    IP Address:   11000000.10101000.00000001.00000001
-    Subnet Mask:   11111111.11111111.11111111.00000000
-    Result:        11000000.10101000.00000001.00000000
-
-    The result is the network address of the subnet.
-
-4. CIDR Notation in Binary:
-
-CIDR notation, often expressed as /n, indicates the number of bits in the network portion of the subnet mask. For example, /24 means the first 24 bits are the network, and the remaining bits are for hosts. In binary, this translates to:
-
-    Network:       11000000.10101000.00000001.00000000
-    CIDR (/24):    11111111.11111111.11111111.00000000
-
-    The CIDR notation aligns with the subnet mask in binary representation.
-
-5. Binary Subnetting Examples:
-
-Consider a subnet with CIDR notation /26:
-
-    CIDR (/26):    11111111.11111111.11111111.11000000
-
-    Applying this subnet mask to an IP address yields a subnet with 64 possible hosts.
-
-6. Binary Logic for Subnetting Decisions:
-
-When designing subnets, binary logic guides decisions on the number of subnets and hosts per subnet. It ensures efficient utilization of IP address space and accommodates the desired network structure.
-
-7. Practical Application:
-
-As network administrators plan and implement subnets, understanding the binary translation is essential. It aids in addressing complexities, troubleshooting, and efficiently managing IP resources.
-
-Public IP addresses 
-
-Crucial for global internet connectivity, are organized within specific ranges. 
-These ranges ensure efficient allocation and management of addresses.  
-
-1.0.0.0 to 9.255.255.255, 
-11.0.0.0 to 100.63.255.255, 
-100.128.0.0 to 126.255.255.255, 
-128.0.0.0 to 169.253.255.255, 
-169.255.0.0 to 172.15.255.255, 
-172.32.0.0 to 191.255.255.255, 
-192.0.1.0/24, 
-192.0.3.0 to 192.88.98.255, 
-192.88.100.0 to 192.167.255.255, 
-192.169.0.0 to 198.17.255.255, 
-198.20.0.0 to 198.51.99.255, 
-198.51.101.0 to 203.0.112.255, 
-203.0.114.0 to 223.255.255.255. 
-
-These ranges help in preventing conflicts, ensuring that each device on the internet is uniquely identified by its public IP address. Whether it's for a website, server, or any globally accessible device, adhering to these established ranges ensures the smooth flow of information across the interconnected web.
-
-Private IP addresses fall within the ranges of 
-
-10.0.0.0 to 10.255.255.255 (Class A),
-172.16.0.0 to 172.31.255.255 (Class B), and 
-192.168.0.0 to 192.168.255.255 (Class C). 
-
-These private address ranges are reserved for internal networks and are not routable over the internet.
