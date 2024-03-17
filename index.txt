@@ -155,7 +155,7 @@ When designing subnets, binary logic guides decisions on the number of subnets a
 
 As network administrators plan and implement subnets, understanding the binary translation is essential. It aids in addressing complexities, troubleshooting, and efficiently managing IP resources.
 
-Public IP addresses 
+3.2.2 Public IP addresses 
 
 Crucial for global internet connectivity, are organized within specific ranges. 
 These ranges ensure efficient allocation and management of addresses.  
