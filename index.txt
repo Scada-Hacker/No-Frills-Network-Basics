@@ -24,11 +24,11 @@ Index :
 2. Fundementals
 3. Networking
 
-3.1 IP Address
-3.1.2 Subnets
-3.1.3 Cidr
+IP Address
+Subnets
+Cidr
 
-3.2 Addressing
+Addressing
 
 3.2.2 Private / Public IP 
 
@@ -75,7 +75,7 @@ Network fundamentals encompass the foundational principles and components essent
 
 3.1
 
-1. IP Addressing Basics:
+3.1.1. IP Addressing Basics:
 
 In networking, devices are identified by unique IP addresses. IP addresses consist of two main components: the network portion and the host portion. Subnetting focuses on dividing the IP address space into smaller, more manageable segments.
 
@@ -86,41 +86,41 @@ Subnets
 Understanding Subnets in Networking
 A subnet, short for "subnetwork," is a division of an IP network that enables efficient organization and management of IP addresses. Subnetting plays a crucial role in optimizing network performance, security, and resource allocation.
 
-2. Why Subnet?
+3.1.2 Why Subnet?
 
 Efficient Resource Allocation: Subnetting allows network administrators to allocate IP addresses more efficiently by creating smaller, logical subdivisions. This helps prevent IP address exhaustion and makes it easier to manage and troubleshoot network issues.
 Improved Performance: By breaking a large network into smaller subnets, broadcast traffic is contained within each subnet. This minimizes network congestion and enhances overall performance.
 
-3. Subnet Mask:
+3.1.3 Subnet Mask:
 
 A subnet is defined by a subnet mask, which is a 32-bit number that divides the IP address into network and host portions. The subnet mask uses a combination of binary 1s (representing the network portion) and 0s (representing the host portion).
 Example: In the IP address 192.168.1.1 with a subnet mask of 255.255.255.0, the first 24 bits are dedicated to the network, and the last 8 bits are for hosts.
 
-4. Subnetting Notation:
+3.1.4 Subnetting Notation:
 
 Subnets are often represented using CIDR (Classless Inter-Domain Routing) notation. For instance, 192.168.1.0/24 indicates a subnet with a 24-bit network portion.
 The CIDR notation helps express the size of the subnet and facilitates efficient addressing.
 
-5. Subnetting Benefits:
+3.1.5 Subnetting Benefits:
 
 Security: Subnets enhance security by isolating sections of a network. Access control lists (ACLs) can be applied to regulate traffic between subnets, minimizing unauthorized access and potential security threats.
 Scalability: Subnets provide scalability by allowing networks to grow in a structured manner. New subnets can be added as needed without impacting the entire network.
 
-6. Subnet Design Considerations:
+3.1.6 Subnet Design Considerations:
 
 Number of Hosts: The number of hosts required in each subnet influences the subnet mask and design.
 Geographical Location: Consider the physical layout of the network and the need for subnets in different locations.
 
 Binary Translation in Subnetting: Unveiling the Binary Language of Networks
-1. Binary Representation of IP Addresses:
+3.1.7 Binary Representation of IP Addresses:
 
 At its core, all networking operations, including subnetting, rely on binary representation. Each octet (8 bits) of an IP address is converted into binary form. For example, the IP address 192.168.1.1 translates to 11000000.10101000.00000001.00000001 in binary.
 
-2. Subnet Mask in Binary:
+3.1.8 Subnet Mask in Binary:
 
 The subnet mask is a binary pattern that separates the network and host portions of an IP address. In binary, it consists of a series of consecutive 1s followed by 0s. For instance, the subnet mask 255.255.255.0 translates to 11111111.11111111.11111111.00000000 in binary.
 
-3. Applying the Subnet Mask:
+3.1.9 Applying the Subnet Mask:
 
 The subnet mask is logically ANDed with the IP address in binary. This operation preserves the network portion while zeroing out the host bits. In our example:
 
@@ -130,7 +130,7 @@ The subnet mask is logically ANDed with the IP address in binary. This operation
 
     The result is the network address of the subnet.
 
-4. CIDR Notation in Binary:
+3.2.1 CIDR Notation in Binary:
 
 CIDR notation, often expressed as /n, indicates the number of bits in the network portion of the subnet mask. For example, /24 means the first 24 bits are the network, and the remaining bits are for hosts. In binary, this translates to:
 
@@ -139,7 +139,7 @@ CIDR notation, often expressed as /n, indicates the number of bits in the networ
 
     The CIDR notation aligns with the subnet mask in binary representation.
 
-5. Binary Subnetting Examples:
+3.2.2 Binary Subnetting Examples:
 
 Consider a subnet with CIDR notation /26:
 
@@ -147,15 +147,17 @@ Consider a subnet with CIDR notation /26:
 
     Applying this subnet mask to an IP address yields a subnet with 64 possible hosts.
 
-6. Binary Logic for Subnetting Decisions:
+3.2.3 Binary Logic for Subnetting Decisions:
 
 When designing subnets, binary logic guides decisions on the number of subnets and hosts per subnet. It ensures efficient utilization of IP address space and accommodates the desired network structure.
 
-7. Practical Application:
+3.2.4 Practical Application:
 
 As network administrators plan and implement subnets, understanding the binary translation is essential. It aids in addressing complexities, troubleshooting, and efficiently managing IP resources.
 
-3.2.2 Public IP addresses 
+3.2.5 Addressing
+
+3.2.5.1  Public IP addresses 
 
 Crucial for global internet connectivity, are organized within specific ranges. 
 These ranges ensure efficient allocation and management of addresses.  
@@ -178,7 +180,7 @@ These ranges ensure efficient allocation and management of addresses.
 
 These ranges help in preventing conflicts, ensuring that each device on the internet is uniquely identified by its public IP address. Whether it's for a website, server, or any globally accessible device, adhering to these established ranges ensures the smooth flow of information across the interconnected web.
 
-Private IP addresses fall within the ranges of 
+3.2.5.2 Private IP addresses fall within the ranges of 
 
 10.0.0.0 to 10.255.255.255 (Class A),
 172.16.0.0 to 172.31.255.255 (Class B), and 
@@ -187,8 +189,7 @@ Private IP addresses fall within the ranges of
 These private address ranges are reserved for internal networks and are not routable over the internet.
 
 
-
-3.2 Protocols
+3.3 Protocols
 
 3.2.1 DNS
 
