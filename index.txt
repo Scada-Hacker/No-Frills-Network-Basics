@@ -19,6 +19,7 @@ I cant do much about number 1. If you fall into this catergory, I doubt this is 
 As I said - no frills.
 
 Index :
+
 1. I Want to be a hacker like MR Robot. Teach ME !
 2. Fundementals
 3. Networking
@@ -28,14 +29,78 @@ Subnets
 Cidr
 
 3.2 Protocols
+
 DNS
+
+Understanding How DNS Works: A Comprehensive Tutorial
+
+The Domain Name System (DNS) is a crucial component of the internet infrastructure, responsible for translating human-readable domain names into machine-readable IP addresses. This tutorial aims to provide a detailed explanation of how DNS works, from the initial domain name resolution to the final retrieval of web content.
+
+The Domain Name System (DNS) stands as a crucial network protocol that plays a fundamental role in the functioning of the internet. Without it, navigating to our favorite websites would be an arduous task, requiring us to memorize countless IP addresses. Just imagine having to recall the IPv4 (32-bit) addresses of platforms like Facebook, Amazon, and Hackers-Arise, compounded by the complexity of IPv6 (128-bit) addresses.
+DNS serves the purpose of translating human-readable domain names into the numerical IP addresses necessary for internet routing. It essentially acts as a translator, converting domain names, which are easy for people to remember, into IP addresses comprehensible to computers and the internet routing system. Therefore, when you input a domain name like www.hackers-arise.com into your browser, DNS swiftly translates it into the corresponding computer-friendly IP address (23.236.62.147), enabling the internet to effectively route your request.
+
+Domain names are required to undergo registration with ICANN (Internet Corporation for Assigned Names and Numbers), typically facilitated by intermediaries like VeriSign or GoDaddy. These registrations encompass various Top-Level Domains (TLDs) such as .com, .edu, and .org, which are commonly observed at the conclusion of Fully Qualified Domain Names (FQDNs).
+
+DNS operates in a hierarchical fashion, with TLDs capable of accommodating multiple subdomains. A subdomain denotes a domain integrated within a larger domain structure. In this instance, redhat and cnn are often colloquially termed as the domain, yet they are technically Second-Level Domains (SLDs) beneath .com.
+
+Beneath these SLDs, commonly referred to as domains, exist numerous subdomains. For instance, within and beneath google.com, google.developent.com may be established. This hierarchical structure allows for the subdivision of domains, with the leftmost portion representing the most specific designation, while the rightmost portion denotes the most general categorization.
+
+
+1. DNS Basics
+
+DNS operates as a distributed hierarchical system comprised of multiple components, including DNS servers, resolvers, and authoritative name servers.
+
+DNS Servers: These servers store DNS records and respond to queries from clients. They are classified into several types, including recursive resolvers, root servers, top-level domain (TLD) servers, and authoritative name servers.
+
+Resolvers: Resolvers are DNS clients that initiate DNS queries on behalf of users. They communicate with DNS servers to resolve domain names into IP addresses.
+
+Authoritative Name Servers: These servers store DNS records for specific domains and provide authoritative responses to DNS queries for those domains.
+
+2. DNS Resolution Process
+
+The DNS resolution process involves several steps, starting from the user's request to access a domain name:
+
+Step 1: User Request: A user enters a domain name (e.g., www.example.com) into their web browser.
+
+Step 2: Resolver Query: The resolver, typically provided by the user's ISP or network administrator, receives the request and queries its configured DNS servers.
+
+Step 3: Recursive Query: If the resolver does not have the requested DNS record cached, it sends a recursive query to a root DNS server.
+
+Step 4: Root DNS Server: The root DNS server responds with the IP address of the TLD server responsible for the requested domain's top-level domain (e.g., .com).
+
+Step 5: TLD DNS Server: The resolver sends a query to the TLD server, which responds with the IP address of the authoritative name server for the requested domain.
+
+Step 6: Authoritative Name Server: Finally, the resolver queries the authoritative name server, which provides the IP address associated with the requested domain name.
+
+3. DNS Caching and TTL
+
+To improve DNS query efficiency and reduce network traffic, DNS servers and resolvers implement caching mechanisms. When a DNS query is resolved, the result is cached for a specified Time to Live (TTL) period. Subsequent queries for the same domain within the TTL period can be answered directly from the cache, bypassing the recursive resolution process.
+
+4. DNS Record Types
+
+DNS supports various types of resource records (RRs) that store different types of information about domain names. Some common DNS record types include:
+
+    A Record: Maps a domain name to an IPv4 address.
+    AAAA Record: Maps a domain name to an IPv6 address.
+    CNAME Record: Creates an alias for a domain name (canonical name).
+    MX Record: Specifies the mail exchange servers for a domain.
+    NS Record: Indicates the authoritative name servers for a domain.
+
+5. DNSSEC (DNS Security Extensions)
+
+DNSSEC is a suite of security extensions designed to add cryptographic integrity and authentication to DNS data. It aims to prevent DNS spoofing and man-in-the-middle attacks by validating DNS responses using digital signatures.
+
+Conclusion
+
+DNS plays a critical role in facilitating internet communication by translating human-readable domain names into machine-readable IP addresses. Understanding how DNS works is essential for network administrators, web developers, and anyone interested in internet infrastructure. By following the steps outlined in this tutorial, you can gain a comprehensive understanding of the DNS resolution process and its underlying mechanisms.
+
 DHCP
 ARP
 SMB
 SMTP
 HTTP
 
-3.3 Private / Public
+3.3 Private / Public IP Addressing
 
 4. Firewalls
 5. Network Analysis
