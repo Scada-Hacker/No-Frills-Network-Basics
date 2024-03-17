@@ -25,31 +25,31 @@ Index :
 3. Networking
 
 3.1 IP Address
-Subnets
-Cidr
+3.1.2 Subnets
+3.1.3 Cidr
 
 3.2 Addressing
 
-Private / Public IP 
+3.2.2 Private / Public IP 
 
 3.3 Protocols
-DNS
-DHCP
-ARP
-SMB
-SMTP
-HTTP
+3.3.1 DNS
+3.3.2 DHCP
+3.3.3 ARP
+3.3.4 SMB
+3.3.5 SMTP
+3.3.6 HTTP
 
 4. Firewalls
 5. Network Analysis
 6. Wireless Protocols
 7. An introduction to ICS and why you should NEVER attempt to hack it 
-Shodan
-Perdue Model
-PLC's
-SCADA
-MODBUS
-HMI - Human Machine Interface
+7.1 Shodan
+7.2 Perdue Model
+7.3 PLC's
+7.4 SCADA
+7.5 MODBUS
+7.6 HMI - Human Machine Interface
 8. CAN Bus
 9. Radio Frequencies
 10 HMI - USB on steroids
