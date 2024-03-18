@@ -34,7 +34,7 @@ Addressing
 
 3.3 Protocols
 3.3.1 DNS
-3.3.2 DHCP
+3.3.4 DHCP
 3.3.3 ARP
 3.3.4 SMB
 3.3.5 SMTP
@@ -191,7 +191,7 @@ These private address ranges are reserved for internal networks and are not rout
 
 3.3 Protocols
 
-3.2.1 DNS
+3.3.1 DNS
 
 Understanding How DNS Works: A Comprehensive Tutorial
 
@@ -207,7 +207,7 @@ DNS operates in a hierarchical fashion, with TLDs capable of accommodating multi
 Beneath these SLDs, commonly referred to as domains, exist numerous subdomains. For instance, within and beneath google.com, google.developent.com may be established. This hierarchical structure allows for the subdivision of domains, with the leftmost portion representing the most specific designation, while the rightmost portion denotes the most general categorization.
 
 
-1. DNS Basics
+3.3.2 DNS Basics
 
 DNS operates as a distributed hierarchical system comprised of multiple components, including DNS servers, resolvers, and authoritative name servers.
 
@@ -217,7 +217,7 @@ Resolvers: Resolvers are DNS clients that initiate DNS queries on behalf of user
 
 Authoritative Name Servers: These servers store DNS records for specific domains and provide authoritative responses to DNS queries for those domains.
 
-2. DNS Resolution Process
+3.3.3 DNS Resolution Process
 
 The DNS resolution process involves several steps, starting from the user's request to access a domain name:
 
@@ -233,11 +233,11 @@ Step 5: TLD DNS Server: The resolver sends a query to the TLD server, which resp
 
 Step 6: Authoritative Name Server: Finally, the resolver queries the authoritative name server, which provides the IP address associated with the requested domain name.
 
-3. DNS Caching and TTL
+3.3.4 DNS Caching and TTL
 
 To improve DNS query efficiency and reduce network traffic, DNS servers and resolvers implement caching mechanisms. When a DNS query is resolved, the result is cached for a specified Time to Live (TTL) period. Subsequent queries for the same domain within the TTL period can be answered directly from the cache, bypassing the recursive resolution process.
 
-4. DNS Record Types
+3.3.5 DNS Record Types
 
 DNS supports various types of resource records (RRs) that store different types of information about domain names. Some common DNS record types include:
 
@@ -247,8 +247,44 @@ DNS supports various types of resource records (RRs) that store different types 
     MX Record: Specifies the mail exchange servers for a domain.
     NS Record: Indicates the authoritative name servers for a domain.
 
-5. DNSSEC (DNS Security Extensions)
+3.3.6 DNSSEC (DNS Security Extensions)
 
 DNSSEC is a suite of security extensions designed to add cryptographic integrity and authentication to DNS data. It aims to prevent DNS spoofing and man-in-the-middle attacks by validating DNS responses using digital signatures.
 
 DNS plays a critical role in facilitating internet communication by translating human-readable domain names into machine-readable IP addresses. Understanding how DNS works is essential for network administrators, web developers, and anyone interested in internet infrastructure. By following the steps outlined in this tutorial, you can gain a comprehensive understanding of the DNS resolution process and its underlying mechanisms.
+
+3.4 DHCP
+
+DHCP is a network management protocol employed to automate the assignment of IP addresses and other network configuration parameters to devices connected within a network. Its primary goal is to simplify the process of network administration by dynamically allocating network addresses to devices, thereby eliminating the need for manual configuration.
+
+At its core, DHCP operates on a client-server model, where DHCP servers are responsible for assigning IP addresses and related network parameters, while DHCP clients request and receive these configurations. The process unfolds in a series of steps, encapsulated within a DHCP transaction.
+
+DHCP Transaction:
+
+DHCP Discover: When a device connects to a network, it sends out a DHCP Discover broadcast message to discover available DHCP servers. This broadcast is typically directed to the limited broadcast address (255.255.255.255), ensuring that all DHCP servers within the local network segment receive the message.
+
+DHCP Offer: Upon receiving the DHCP Discover message, DHCP servers respond with a DHCP Offer message. This message contains an available IP address and other network configuration parameters, such as subnet mask, default gateway, DNS server addresses, lease duration, etc. Each DHCP server may send an offer, but the client usually accepts the first offer it receives.
+
+DHCP Request: Having received one or more offers, the DHCP client selects an offer and sends a DHCP Request message to the chosen DHCP server, confirming its intention to acquire the offered configuration.
+
+DHCP Acknowledgment: Upon receiving the DHCP Request message, the DHCP server acknowledges the client's request by sending a DHCP Acknowledgment message. This message confirms the allocation of the IP address and other network parameters to the client.
+
+IP Lease: The DHCP server leases the IP address to the client for a specified duration, known as the lease period. During this lease period, the client is authorized to utilize the allocated IP address and network configurations. Upon lease expiration, the client must renew its lease or request a new one.
+
+Key Components of DHCP:
+
+DHCP Server: A DHCP server is a network device responsible for allocating IP addresses and configuring network parameters to DHCP clients within its scope of authority. DHCP servers maintain a pool of available IP addresses and lease durations, ensuring efficient utilization of network resources.
+
+DHCP Client: DHCP clients are devices seeking network configuration parameters from DHCP servers. These devices may include computers, smartphones, printers, and other network-enabled devices. DHCP clients automate the process of obtaining IP addresses and related configurations, simplifying network setup and administration.
+
+DHCP Relay Agent: In large networks spanning multiple subnets, DHCP relay agents facilitate DHCP communication between DHCP clients and servers. These agents receive DHCP broadcast messages from clients and forward them to designated DHCP servers, ensuring seamless DHCP operation across network segments.
+
+Benefits of DHCP:
+
+Simplified Network Management: DHCP eliminates the manual configuration of network parameters, streamlining the process of network administration. By automating IP address assignment and configuration, DHCP minimizes human intervention and reduces the likelihood of configuration errors.
+
+Efficient Resource Utilization: DHCP optimizes the utilization of IP addresses by dynamically allocating them to devices as needed. By leasing IP addresses for a finite duration, DHCP ensures that unused addresses are returned to the available pool, preventing address exhaustion and promoting resource efficiency.
+
+Scalability: DHCP accommodates the dynamic growth of networks by dynamically allocating IP addresses to newly connected devices. As networks expand or contract, DHCP seamlessly adjusts its allocation of IP addresses and network configurations, facilitating network scalability and adaptability.
+
+Centralized Management: DHCP centralizes the management of network configurations within a dedicated DHCP server. Administrators can configure DHCP servers to enforce network policies, assign specific IP address ranges to designated devices, and monitor network activity centrally, enhancing network security and control.
