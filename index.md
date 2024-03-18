@@ -61,10 +61,10 @@ Now you have 2 options
 1. Go away
 2. Jump to the next section and start learning the fundementals
 
-2. Fundementals
+3. Fundementals
 The next sections cover the bits you should learn before progressing any further. This will give you a strong foundation and understanding before sticking on a guyfawkes mask and pretending your some kind of anoynmous super hacker. It's not over complicated, and you will thank yourself for putting in a little work instead of wasting your time playing fortnite, watching xxxx porn websites and trying to hack into someones private instagram pictures (Im looking at YOU !)
 
-3. Networks
+4. Networks
 
 Network fundamentals encompass the foundational principles and components essential for the functioning of computer networks. At the core is an understanding of the OSI (Open Systems Interconnection) model, which delineates the seven layers of communication protocols. Proficiency in networking requires a grasp of networking devices such as routers, switches, hubs, and modems, as well as an ability to configure and manage them. A solid comprehension of IP addressing, subnetting, and the different types of IP protocols is crucial for effective communication within a network. Protocols like TCP/IP play a pivotal role in data transmission, highlighting the significance of reliable and efficient communication. Security is another critical aspect, with an emphasis on concepts like firewalls, encryption, and secure authentication mechanisms. Additionally, troubleshooting skills are paramount for identifying and resolving issues that may arise in a network.
 
