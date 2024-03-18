@@ -255,29 +255,49 @@ At its core, DHCP operates on a client-server model, where DHCP servers are resp
 
 DHCP Transaction:
 
-DHCP Discover: When a device connects to a network, it sends out a DHCP Discover broadcast message to discover available DHCP servers. This broadcast is typically directed to the limited broadcast address (255.255.255.255), ensuring that all DHCP servers within the local network segment receive the message.
+DHCP Discover: 
 
-DHCP Offer: Upon receiving the DHCP Discover message, DHCP servers respond with a DHCP Offer message. This message contains an available IP address and other network configuration parameters, such as subnet mask, default gateway, DNS server addresses, lease duration, etc. Each DHCP server may send an offer, but the client usually accepts the first offer it receives.
+When a device connects to a network, it sends out a DHCP Discover broadcast message to discover available DHCP servers. This broadcast is typically directed to the limited broadcast address (255.255.255.255), ensuring that all DHCP servers within the local network segment receive the message.
 
-DHCP Request: Having received one or more offers, the DHCP client selects an offer and sends a DHCP Request message to the chosen DHCP server, confirming its intention to acquire the offered configuration.
+DHCP Offer: 
 
-DHCP Acknowledgment: Upon receiving the DHCP Request message, the DHCP server acknowledges the client's request by sending a DHCP Acknowledgment message. This message confirms the allocation of the IP address and other network parameters to the client.
+Upon receiving the DHCP Discover message, DHCP servers respond with a DHCP Offer message. This message contains an available IP address and other network configuration parameters, such as subnet mask, default gateway, DNS server addresses, lease duration, etc. Each DHCP server may send an offer, but the client usually accepts the first offer it receives.
 
-IP Lease: The DHCP server leases the IP address to the client for a specified duration, known as the lease period. During this lease period, the client is authorized to utilize the allocated IP address and network configurations. Upon lease expiration, the client must renew its lease or request a new one.
+DHCP Request: 
+
+Having received one or more offers, the DHCP client selects an offer and sends a DHCP Request message to the chosen DHCP server, confirming its intention to acquire the offered configuration.
+
+DHCP Acknowledgment: 
+
+Upon receiving the DHCP Request message, the DHCP server acknowledges the client's request by sending a DHCP Acknowledgment message. This message confirms the allocation of the IP address and other network parameters to the client.
+
+IP Lease: 
+
+The DHCP server leases the IP address to the client for a specified duration, known as the lease period. During this lease period, the client is authorized to utilize the allocated IP address and network configurations. Upon lease expiration, the client must renew its lease or request a new one.
 
 Key Components of DHCP:
 
-DHCP Server: A DHCP server is a network device responsible for allocating IP addresses and configuring network parameters to DHCP clients within its scope of authority. DHCP servers maintain a pool of available IP addresses and lease durations, ensuring efficient utilization of network resources.
+DHCP Server: 
 
-DHCP Client: DHCP clients are devices seeking network configuration parameters from DHCP servers. These devices may include computers, smartphones, printers, and other network-enabled devices. DHCP clients automate the process of obtaining IP addresses and related configurations, simplifying network setup and administration.
+A DHCP server is a network device responsible for allocating IP addresses and configuring network parameters to DHCP clients within its scope of authority. DHCP servers maintain a pool of available IP addresses and lease durations, ensuring efficient utilization of network resources.
 
-DHCP Relay Agent: In large networks spanning multiple subnets, DHCP relay agents facilitate DHCP communication between DHCP clients and servers. These agents receive DHCP broadcast messages from clients and forward them to designated DHCP servers, ensuring seamless DHCP operation across network segments.
+DHCP Client: 
+
+DHCP clients are devices seeking network configuration parameters from DHCP servers. These devices may include computers, smartphones, printers, and other network-enabled devices. DHCP clients automate the process of obtaining IP addresses and related configurations, simplifying network setup and administration.
+
+DHCP Relay Agent: 
+
+In large networks spanning multiple subnets, DHCP relay agents facilitate DHCP communication between DHCP clients and servers. These agents receive DHCP broadcast messages from clients and forward them to designated DHCP servers, ensuring seamless DHCP operation across network segments.
 
 Benefits of DHCP:
 
-Simplified Network Management: DHCP eliminates the manual configuration of network parameters, streamlining the process of network administration. By automating IP address assignment and configuration, DHCP minimizes human intervention and reduces the likelihood of configuration errors.
+Simplified Network Management: 
 
-Efficient Resource Utilization: DHCP optimizes the utilization of IP addresses by dynamically allocating them to devices as needed. By leasing IP addresses for a finite duration, DHCP ensures that unused addresses are returned to the available pool, preventing address exhaustion and promoting resource efficiency.
+DHCP eliminates the manual configuration of network parameters, streamlining the process of network administration. By automating IP address assignment and configuration, DHCP minimizes human intervention and reduces the likelihood of configuration errors.
+
+Efficient Resource Utilization: 
+
+DHCP optimizes the utilization of IP addresses by dynamically allocating them to devices as needed. By leasing IP addresses for a finite duration, DHCP ensures that unused addresses are returned to the available pool, preventing address exhaustion and promoting resource efficiency.
 
 Scalability: DHCP accommodates the dynamic growth of networks by dynamically allocating IP addresses to newly connected devices. As networks expand or contract, DHCP seamlessly adjusts its allocation of IP addresses and network configurations, facilitating network scalability and adaptability.
 
