@@ -22,11 +22,17 @@ Index :
 
 1. I Want to be a hacker like MR Robot. Teach ME !
 2. Fundementals
+
 3. Networking
+
 3.1 IP Address
+
 3.2 Subnets
+
 3.3 Cidr
+
 3.4 Addressing
+
 3.2.2. Private / Public IP 
 3.3. Protocols
 3.3.1. DNS
