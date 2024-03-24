@@ -35,17 +35,27 @@ Index :
 3.4. Addressing
 
 3.2.2. Private / Public IP 
+
 3.3. Protocols
+
 3.3.1. DNS
+
 3.3.4. DHCP
+
 3.3.3. ARP
+
 3.3.4. SMB
+
 3.3.5. SMTP
+
 3.3.6. HTTP
 
 5. Firewalls
+
 6. Network Analysis
+
 7. Wireless Protocols
+
 8. An introduction to ICS and why you should NEVER attempt to hack it
    
 7.1. Shodan
