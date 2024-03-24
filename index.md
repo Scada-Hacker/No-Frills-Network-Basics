@@ -54,7 +54,7 @@ Addressing
 
 1. I Want to be a hacker like MR Robot. Teach ME !
 
-Shut up. Take a moment, repeat out loud and Listen to how ridiculous it sounds asking such questions. BTW Mr Robot, whilst rather good in its own right was nothing to do with hacking and everything to do with mental illness.
+Shut up. Take a moment, repeat out loud and listen to how ridiculous it sounds asking such questions. BTW Mr Robot, whilst rather good in its own right was nothing to do with hacking and everything to do with mental illness.
 
 Now you have 2 options :
 
