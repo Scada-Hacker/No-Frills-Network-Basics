@@ -25,13 +25,13 @@ Index :
 
 3. Networking
 
-3.1 IP Address
+3.1. IP Address
 
-3.2 Subnets
+3.2. Subnets
 
-3.3 Cidr
+3.3. Cidr
 
-3.4 Addressing
+3.4. Addressing
 
 3.2.2. Private / Public IP 
 3.3. Protocols
