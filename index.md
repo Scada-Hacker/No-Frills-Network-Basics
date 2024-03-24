@@ -47,12 +47,12 @@ Index :
 6. Network Analysis
 7. Wireless Protocols
 8. An introduction to ICS and why you should NEVER attempt to hack it 
-7.1 Shodan
-7.2 Perdue Model
-7.3 PLC's
-7.4 SCADA
-7.5 MODBUS
-7.6 HMI - Human Machine Interface
+7.1. Shodan
+7.2. Perdue Model
+7.3. PLC's
+7.4. SCADA
+7.5. MODBUS
+7.6. HMI - Human Machine Interface
 9. CAN Bus
 10. Radio Frequencies
 10 HMI - USB on steroids
