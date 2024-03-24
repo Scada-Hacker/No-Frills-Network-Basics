@@ -52,16 +52,16 @@ Addressing
 
 ------------------------------------------------
 
-# 1. I Want to be a hacker like MR Robot. Teach ME !
+### 1. I Want to be a hacker like MR Robot. Teach ME !
 
 Shut up. Take a moment, repeat out loud and listen to how ridiculous it sounds asking such questions. BTW Mr Robot, whilst rather good in its own right was nothing to do with hacking and everything to do with mental illness.
 
 Now you have 2 options :
 
-    Go away
-    Jump to the next section and start learning the fundementals
+Go away
+Jump to the next section and start learning the fundementals
     
-# 2. Fundementals
+### 2. Fundementals
 
 The next sections cover the bits you should learn before progressing any further. This will give you a strong foundation and understanding before sticking on a guyfawkes mask and pretending your some kind of anoynmous super hacker. It's not over complicated, and you will thank yourself for putting in a little work instead of wasting your time playing fortnite, watching xxxx porn websites and trying to hack into someones private instagram pictures (Im looking at YOU !)
 
