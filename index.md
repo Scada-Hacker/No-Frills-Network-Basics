@@ -22,7 +22,7 @@ Index :
 
 1. I Want to be a hacker like MR Robot. Teach ME !
 
-2, Fundementals
+2. Fundementals
 
 3. Networking
 
