@@ -50,13 +50,13 @@ SMTP
 
 HTTP
 
-5. Firewalls
+Firewalls
 
-6. Network Analysis
+Network Analysis
 
-7. Wireless Protocols
+Wireless Protocols
 
-8. An introduction to ICS and why you should NEVER attempt to hack it
+An introduction to ICS and why you should NEVER attempt to hack it
    
 Shodan
 
@@ -95,7 +95,6 @@ The next sections cover the bits you should learn before progressing any further
 ### 3. Networks
 
 Network fundamentals encompass the foundational principles and components essential for the functioning of computer networks. At the core is an understanding of the OSI (Open Systems Interconnection) model, which delineates the seven layers of communication protocols. Proficiency in networking requires a grasp of networking devices such as routers, switches, hubs, and modems, as well as an ability to configure and manage them. A solid comprehension of IP addressing, subnetting, and the different types of IP protocols is crucial for effective communication within a network. Protocols like TCP/IP play a pivotal role in data transmission, highlighting the significance of reliable and efficient communication. Security is another critical aspect, with an emphasis on concepts like firewalls, encryption, and secure authentication mechanisms. Additionally, troubleshooting skills are paramount for identifying and resolving issues that may arise in a network.
-
 
 
 #### IP Addressing Basics:
